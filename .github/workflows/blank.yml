@@ -24,6 +24,6 @@ jobs:
       
       - name: Run a Test in ALM
         run: |
-            Echo "CD C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug"
-            Echo "FTToolsLauncher.exe -paramfile ALM_TestSet.mtb"
+            Echo "::CD C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug"
+            Echo "::FTToolsLauncher.exe -paramfile ALM_TestSet.mtb"
   
