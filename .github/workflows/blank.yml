@@ -16,8 +16,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-     - name: Change Directory to CI Tool Then Run ALM UFT Script
-        run:|
-             echo '::CD C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug'
-             echo "::.\FTToolsLauncher.exe -paramfile ALM_TestSet.mtb"
+      - name: Chg Dir and Exec ALM Test
+        run: |
+          echo '::CD C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug'
+          echo "::.\FTToolsLauncher.exe -paramfile ALM_TestSet.mtb"
   
