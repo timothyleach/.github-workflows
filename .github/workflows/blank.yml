@@ -24,7 +24,6 @@ jobs:
       
       - name: Run a Test in ALM
         run: |
-              
             CD "C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug",
              FTToolsLauncher.exe -paramfile ALM_TestSet.mtb
   
