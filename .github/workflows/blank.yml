@@ -19,5 +19,7 @@ jobs:
       - name: Chg Dir and Exec ALM Test
         run: |
           echo '::CD C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug'
+          CD C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug
           echo '::.\FTToolsLauncher.exe -paramfile ALM_TestSet.mtb'
+          .\FTToolsLauncher.exe -paramfile ALM_TestSet.mtb
   
