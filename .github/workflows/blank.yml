@@ -20,10 +20,10 @@ jobs:
       # Runs a set of commands using the runners shell
       #- name: Change Directory to CI Tool
       #  run:
-      #    CD "C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug"
+      #    ECHO "CD C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug"
       
       - name: Run a Test in ALM
         run: |
-            CD C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug
-             FTToolsLauncher.exe -paramfile ALM_TestSet.mtb
+            Echo "CD C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug"
+            Echo "FTToolsLauncher.exe -paramfile ALM_TestSet.mtb"
   
