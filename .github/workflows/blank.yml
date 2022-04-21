@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Chg Dir and Exec ALM Test
         run: |
-          http://192.168.10.134:8082/qcbin/start_a.jsp?common=true
+          url:http://192.168.10.134:8082/qcbin/start_a.jsp?common=true
           echo '::CD C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug'
           CD C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug
           echo '::.\FTToolsLauncher.exe -paramfile ALM_TestSet.mtb'
