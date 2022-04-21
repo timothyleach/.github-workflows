@@ -12,17 +12,13 @@ jobs:
   # This workflow contains a single job called "ALM_Test"
   ALM_Test:
     # The type of runner that the job will run on
-    runs-on: self-hosted
-
- # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      - name: set Client in ALM
-        run: http://192.168.10.134:8082/qcbin/start_a.jsp?common=true
-   
+    runs-on: ALM1
+ 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    #steps:
+    steps:
       - name: Chg Dir and Exec ALM Test
         run: |
+          http://192.168.10.134:8082/qcbin/start_a.jsp?common=true
           echo '::CD C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug'
           CD C:\CI_Utility\ADM-FT-ToolsLauncher-main\bin\Debug
           echo '::.\FTToolsLauncher.exe -paramfile ALM_TestSet.mtb'
